@@ -28,44 +28,15 @@ const Header = () => {
       <NavLink href="/">Home</NavLink>
     </NavItem>
     <NavItem>
-      <NavLink href="/">About</NavLink>
+      <NavLink href="/about">About</NavLink>
     </NavItem>
-    <UncontrolledDropdown nav inNavbar>
-      <DropdownToggle nav caret>
-      Customer Details
-      </DropdownToggle>
-      <DropdownMenu right>
-        <DropdownItem href="/">
-         Add Customer
-        </DropdownItem>
-        <DropdownItem divider />
-        <DropdownItem>
-          Update Customer
-        </DropdownItem>
-        <DropdownItem divider />
-        <DropdownItem>
-          Delete Customer
-        </DropdownItem>
-      </DropdownMenu>
-    </UncontrolledDropdown>
-    <UncontrolledDropdown nav inNavbar>
-      <DropdownToggle nav caret>
-        Order Details
-      </DropdownToggle>
-      <DropdownMenu right>
-        <DropdownItem href="/addorder" >
-         Add Order
-        </DropdownItem>
-        <DropdownItem divider />
-        <DropdownItem>
-          Update Order
-        </DropdownItem>
-        <DropdownItem divider />
-        <DropdownItem>
-          Delete Order
-        </DropdownItem>
-      </DropdownMenu>
-    </UncontrolledDropdown>
+    <NavItem>
+      <NavLink href="/order">Order</NavLink>
+    </NavItem>
+  
+    <NavItem>
+      <NavLink href="/customer">Customer</NavLink>
+    </NavItem>
   </Nav>
 
 </Navbar>
