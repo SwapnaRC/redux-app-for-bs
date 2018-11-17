@@ -17,14 +17,12 @@ export default {
     filename: 'bundle.js'
   },
   devServer: {
-    contentBase: path.resolve(__dirname, 'src'),
-    proxy:{
-      '/api':{
-        target:"http://localhost:8081",
-        secure:false
-      }
+    index: '',
+    proxy: {
+        context: () => true,
+        target: "http://localhost:8081"
     }
-  },
+},
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
